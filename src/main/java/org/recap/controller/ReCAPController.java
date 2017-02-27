@@ -69,7 +69,7 @@ public class ReCAPController {
         }
         return response.toString();
     }
-
+/*
     @Bean
     public EmbeddedServletContainerFactory servletContainerFactory() {
         TomcatEmbeddedServletContainerFactory factory = new TomcatEmbeddedServletContainerFactory();
@@ -82,6 +82,6 @@ public class ReCAPController {
             });
         }
         return factory;
-    }
+    }*/
 
 }
