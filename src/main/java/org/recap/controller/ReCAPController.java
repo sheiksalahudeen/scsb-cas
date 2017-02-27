@@ -71,9 +71,8 @@ public class ReCAPController {
     }
 
     @Bean
-    public EmbeddedServletContainerFactory customServletContainerFactoryConfig() {
-        ApplicationContext applicationContext = ApplicationContextProvider.getInstance().getApplicationContext();
-        TomcatEmbeddedServletContainerFactory factory = applicationContext.getBean(TomcatEmbeddedServletContainerFactory.class);
+    public EmbeddedServletContainerFactory servletContainerFactory() {
+        TomcatEmbeddedServletContainerFactory factory = new TomcatEmbeddedServletContainerFactory();
         if(null != factory) {
             factory.addConnectorCustomizers(new TomcatConnectorCustomizer() {
                 @Override
