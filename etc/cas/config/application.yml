@@ -30,4 +30,6 @@ cas:
         passwordEncoder.secret: recap
     accept:
       users:
+  logout:
+    followServiceRedirects: true
 
