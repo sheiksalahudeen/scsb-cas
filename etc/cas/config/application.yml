@@ -32,4 +32,8 @@ cas:
       users:
   logout:
     followServiceRedirects: true
+  httpWebRequest:
+    header:
+      xframe: true
+      xss: true
 
